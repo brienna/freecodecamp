@@ -1,6 +1,6 @@
 ## [freeCodeCamp](https://www.freecodecamp.com):
 
-Sections for which I only post exercises that made me stop, even if just for a moment, to think:
+Sections for which I only post exercises that either made me pause to think or used a feature I was unfamiliar with:
 
 * Basic JavaScript
 * Object Oriented and Functional Programming

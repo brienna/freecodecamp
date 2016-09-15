@@ -25,7 +25,7 @@ function translatePigLatin(str) {
   
 }
 
-translatePigLatin("consonant");  // returns 
+translatePigLatin("consonant");  // returns onsonantcay
 translatePigLatin("california");  // returns aliforniacay
 translatePigLatin("algorithm");  // returns algorithmway
 translatePigLatin("glove");  // returns oveglay

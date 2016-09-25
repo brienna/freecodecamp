@@ -1,8 +1,10 @@
 ## [freeCodeCamp](https://www.freecodecamp.com):
 
-Sections for which I only post exercises that either made me pause to think or used a feature I was unfamiliar with:
+For most sections, I post all completed exercises. 
+
+Sections for which I post only exercises that either made me pause to think or used a feature I was unfamiliar with:
 
 * Basic JavaScript
 * Object Oriented and Functional Programming
+* HTML5 and CSS
 
-For other sections, I post all completed exercises. 

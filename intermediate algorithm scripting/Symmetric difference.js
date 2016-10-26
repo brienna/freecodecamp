@@ -25,7 +25,7 @@ function sym(args) {
 		return diffAB.concat(diffBA);
 	});
 	
-	return symmetricDiff;
+	return symmetricDiff.sort();
 	
 	function unique(arr) {
 		return arr.filter(function(element, i) {

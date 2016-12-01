@@ -2,6 +2,46 @@ body {
     -webkit-transition: background 0.5s linear;
     -moz-transition: background 0.5s linear;
     -ms-transition: background 0.5s linear;
-    -o-transition: background 0.5s linear;
     transition: background 0.5s linear;
+    font-size: 16px;
+    font-weight: bold;
 }
+
+#message {
+    width: 75%;
+    top: 50px;
+    background-color: white;
+    margin: 0 auto;  /* center div */
+    padding: 40px;
+    padding-bottom: 80px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.btn:focus {
+    outline: 0;
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

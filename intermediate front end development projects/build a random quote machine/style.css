@@ -42,6 +42,30 @@ p {
     justify-content: center;
 }
 
+/* GEARS */
+.machine {
+  position: relative;
+  margin-top: 100px;
+  height: 193px;
+  width: 370px; 
+}
+
+.gear {
+  width: 150px;
+  height: 150px;
+  top: 43px;
+  left: 143px;
+  background-image: radial-gradient(at center center, #1F1F1F 40%, transparent 59%), 
+                    linear-gradient(0deg, transparent 40%, #c4c4c4 40%, #c4c4c4 60%, transparent 60%), 
+                    linear-gradient(45deg, transparent 43%, #c4c4c4 43.5%, #c4c4c4 57%, transparent 57%), 
+                    linear-gradient(90deg, transparent 40%, #c4c4c4 40%, #c4c4c4 60%, transparent 60%), 
+                    linear-gradient(135deg, transparent 43%, #c4c4c4 43.5%, #c4c4c4 57%, transparent 57%); 
+}
+
+.gear {
+  content: "";
+  position: absolute;
+  border-radius: 50%; }
 
 
 

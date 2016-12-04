@@ -18,13 +18,17 @@ function turnGears() {
 
 function getQuote() {
     $.ajax({
-        url: "https://api.whatdoestrumpthink.com/api/v1/quotes/random", 
-        cache: false // for IE so can get new quotes?
+        url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous", 
+        cache: false, // for IE so can get new quotes?
+        headers: {"X-Mashape-Key": "49BXGqtVsEmshNXh2sHLUTBcKQTJp1N572jjsnYPQQCPknAKQi",
+                  "Content-Type": "application/x-www-form-urlencoded",
+                  "Accept": "application/json"}
     }).done(function(data) {
-        var quote = data.message;
+        data = JSON.parse(data);
+        var quote = data.quote;
         $("p").text(quote);
     }).fail(function(err){
-        // handle error 
+        console.log(err);
     });
 }
 

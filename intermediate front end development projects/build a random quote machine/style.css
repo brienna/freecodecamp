@@ -5,6 +5,7 @@ body {
     transition: background 0.5s linear;
     font-size: 16px;
     font-weight: bold;
+    width: 100%;
 }
 
 #message {
@@ -44,28 +45,54 @@ p {
 
 /* GEARS */
 .machine {
-  position: relative;
-  margin-top: 100px;
-  height: 193px;
-  width: 370px; 
+  width: 100%;
 }
 
 .gear {
+  transition: all 3s ease;
+  -webkit-transition: all 3s ease;
+  border-radius: 50%;
+}
+
+.gear1 {
+  margin-top: 0px;
+  width: 125px;
+  height: 125px;
+  background-image: radial-gradient(at center center, white 20%, #000000 20%, #000000 58%, transparent 59%), 
+                    linear-gradient(0deg, transparent 40%, #000000 40%, #000000 60%, transparent 60%), 
+                    linear-gradient(45deg, transparent 43%, #000000 43.5%, #000000 57%, transparent 57%), 
+                    linear-gradient(90deg, transparent 40%, #000000 40%, #000000 60%, transparent 60%),
+                    linear-gradient(135deg, transparent 43%, #000000 43.5%, #000000 57%, transparent 57%); 
+}
+
+.gear2 {
+  margin-top: -62px;
+  margin-left: 100px;
   width: 150px;
   height: 150px;
-  top: 43px;
-  left: 143px;
-  background-image: radial-gradient(at center center, #1F1F1F 40%, transparent 59%), 
+  background-image: radial-gradient(at center center, #FFFFFF 40%, #c4c4c4 42%, #c4c4c4 58%, transparent 59%), 
                     linear-gradient(0deg, transparent 40%, #c4c4c4 40%, #c4c4c4 60%, transparent 60%), 
                     linear-gradient(45deg, transparent 43%, #c4c4c4 43.5%, #c4c4c4 57%, transparent 57%), 
                     linear-gradient(90deg, transparent 40%, #c4c4c4 40%, #c4c4c4 60%, transparent 60%), 
                     linear-gradient(135deg, transparent 43%, #c4c4c4 43.5%, #c4c4c4 57%, transparent 57%); 
 }
 
-.gear {
-  content: "";
-  position: absolute;
-  border-radius: 50%; }
+.gear3 {
+  margin-top: -40px;
+  margin-left: 30px;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(at center center, white 20%, #000000 20%, #000000 58%, transparent 59%), 
+                    linear-gradient(0deg, transparent 40%, #000000 40%, #000000 60%, transparent 60%), 
+                    linear-gradient(45deg, transparent 43%, #000000 43.5%, #000000 57%, transparent 57%), 
+                    linear-gradient(90deg, transparent 40%, #000000 40%, #000000 60%, transparent 60%),
+                    linear-gradient(135deg, transparent 43%, #000000 43.5%, #000000 57%, transparent 57%); 
+}
+
+.rotate {
+  transform: rotate(360deg);
+}
+
 
 
 

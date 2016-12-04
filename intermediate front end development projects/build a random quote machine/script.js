@@ -1,7 +1,20 @@
 $(document).ready(function() {
     getQuote();
-    $("button").on("click", getQuote);
+    changeBackgroundColor("body");
+    $("button").on("click", runMachine);
 });
+
+function runMachine() {
+    getQuote();
+    changeBackgroundColor("body");
+    turnGears();
+}
+
+function turnGears() {
+    $(".gear1").toggleClass("rotate");
+    $(".gear2").toggleClass("rotate");
+    $(".gear3").toggleClass("rotate");
+}
 
 function getQuote() {
     $.ajax({
@@ -13,8 +26,6 @@ function getQuote() {
     }).fail(function(err){
         // handle error 
     });
-
-    changeBackgroundColor("body");
 }
 
 // Changes an element's background color randomly (not possible in CSS AFAIK)

@@ -5,8 +5,9 @@ $(document).ready(function() {
 
 function runMachine() {
     getQuote();
-    changeColor("body");
+    changeColor();
     turnGears();
+    $(".draw").addClass("redraw");
 }
 
 function turnGears() {
@@ -32,10 +33,14 @@ function getQuote() {
 }
 
 // Changes an element's background color randomly (not possible in CSS AFAIK)
-function changeColor(e) {
+function changeColor() {
     var x = Math.floor(Math.random() * 255);
     var y = Math.floor(Math.random() * 255);
     var z = Math.floor(Math.random() * 255);
+
     var color = "rgb(" + x + ", " + y + ", " + z + ")";
     $(".btn").css("background-color", color);
+    $(".draw").css("border", "4px solid " + color);
 }
+
+
